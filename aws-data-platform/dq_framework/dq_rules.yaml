@@ -1,0 +1,9 @@
+# Example DQ rules YAML
+rules:
+  - name: non_null_id
+    column: id
+    check: not_null
+  - name: positive_amount
+    column: amount
+    check: greater_than
+    value: 0

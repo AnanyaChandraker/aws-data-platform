@@ -1,0 +1,17 @@
+{
+  "Name": "demo-emr-cluster",
+  "LogUri": "s3://your-bucket/emr-logs/",
+  "ReleaseLabel": "emr-6.6.0",
+  "Instances": {
+    "MasterInstanceType": "m5.xlarge",
+    "SlaveInstanceType": "m5.xlarge",
+    "InstanceCount": 3,
+    "Ec2KeyName": "your-key",
+    "KeepJobFlowAliveWhenNoSteps": true
+  },
+  "Applications": [
+    {
+      "Name": "Spark"
+    }
+  ]
+}

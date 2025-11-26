@@ -1,0 +1,12 @@
+{
+  "DeliveryStreamName": "example-firehose-to-s3",
+  "S3DestinationConfiguration": {
+    "BucketARN": "arn:aws:s3:::your-bucket-name",
+    "RoleARN": "arn:aws:iam::123456789012:role/FirehoseDeliveryRole",
+    "Prefix": "raw/",
+    "BufferingHints": {
+      "SizeInMBs": 5,
+      "IntervalInSeconds": 300
+    }
+  }
+}

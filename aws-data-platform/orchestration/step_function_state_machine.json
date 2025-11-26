@@ -1,0 +1,14 @@
+{
+  "Comment": "Example state machine",
+  "StartAt": "RunJob",
+  "States": {
+    "RunJob": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::aws-sdk:glue:startJobRun",
+      "Parameters": {
+        "JobName": "exampleGlueJob"
+      },
+      "End": true
+    }
+  }
+}
