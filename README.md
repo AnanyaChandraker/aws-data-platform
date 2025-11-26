@@ -1,3 +1,5 @@
+Directory structure for project setup
+
 aws-data-platform/
 │
 ├── ingestion/
