@@ -1,4 +1,4 @@
-Directory structure for project setup
+Directory structure for project setup:
 
 aws-data-platform/
 │
